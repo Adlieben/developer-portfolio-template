@@ -1,0 +1,24 @@
+project:
+  type: website
+
+website:
+  title: "Adam Maghout"
+  favicon: images/icon.png
+  navbar:
+    left:
+      - href: about-me.qmd
+        text: About me
+      - href: projects.qmd
+        text: Projects
+      - href: CV.qmd
+        text: CV
+      - href: skills.qmd
+        text: Skills
+  page-footer:
+    center: "© <script>document.write(new Date().getFullYear());</script> Adam Maghout"
+        
+format:
+  html:
+    theme: lux
+    css: styles.css
+    toc: true

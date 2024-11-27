@@ -1,0 +1,125 @@
+---
+title: "Skills"
+format: 
+  html:
+    toc: false
+    number-sections: false
+---
+
+## Languages
+
+```{r language-map, echo=FALSE, message=FALSE, warning=FALSE}
+# Define the required packages
+library("leaflet")
+library("dplyr")
+library("rnaturalearth")
+library("rnaturalearthdata")
+library("stringr")
+library("terra")
+
+# Define the languages and corresponding countries
+languages <- list(
+  "English" = c(
+    "United States", "United Kingdom", "Canada", "Australia", "New Zealand",
+    "Ireland", "South Africa", "India", "Nigeria", "Philippines", "Singapore",
+    "Kenya", "Ghana", "Uganda", "Tanzania", "Zimbabwe", "Malta", "Barbados",
+    "Jamaica", "Trinidad and Tobago"
+  ),
+  "French" = c(
+    "France", "Canada", "Belgium", "Switzerland", "Luxembourg", "Senegal",
+    "Ivory Coast", "Democratic Republic of the Congo", "Madagascar",
+    "Cameroon", "Burkina Faso", "Niger", "Mali", "Rwanda", "Burundi",
+    "Benin", "Togo", "Republic of the Congo", "Chad", "Guinea"
+  ),
+  "German" = c(
+    "Germany", "Austria", "Switzerland", "Luxembourg",
+    "Liechtenstein", "Namibia"
+  ),
+  "Dutch" = c(
+    "Netherlands", "Belgium", "Suriname", "Aruba", "Curacao",
+    "Sint Maarten", "Indonesia"
+  )
+)
+
+# Create a data frame with language and country
+language_df <- data.frame(
+  Country = unlist(languages),
+  Language = rep(names(languages), times = sapply(languages, length)),
+  stringsAsFactors = FALSE
+)
+
+# Remove duplicates
+language_df <- language_df %>%
+  distinct()
+
+# Load country polygons
+world <- ne_countries(scale = "medium", returnclass = "sf")
+
+# Identify unmatched countries before correction
+unmatched_countries <- setdiff(language_df$Country, world$name)
+
+# Manually correct country names to match 'world$name'
+country_corrections <- c(
+  "United States" = "United States of America",
+  "Ivory Coast" = "Côte d'Ivoire",
+  "Democratic Republic of the Congo" = "Dem. Rep. Congo",
+  "Republic of the Congo" = "Congo",
+  "Curacao" = "Curaçao"
+)
+
+# Apply corrections
+language_df$Country <- recode(language_df$Country, !!!country_corrections)
+
+# Identify any remaining unmatched countries
+unmatched_countries_after <- setdiff(language_df$Country, world$name)
+
+# Merge language data with world map
+world_lang <- world %>%
+  left_join(language_df, by = c("name" = "Country"))
+
+# Replace NA with "None"
+world_lang$Language[is.na(world_lang$Language)] <- "None"
+
+# Create color palette
+pal <- colorFactor(
+  palette = c("antiquewhite", "bisque3", "cornsilk4", "orange", "lightgray"),
+  domain = c("English", "French", "German", "Dutch", "None")
+)
+
+# Initialize the leaflet map
+leaflet(data = world_lang) %>%
+  addProviderTiles(providers$CartoDB.Positron) %>%
+  # Add polygons
+  addPolygons(
+    fillColor = ~pal(Language),
+    weight = 1,
+    opacity = 1,
+    color = "white",
+    dashArray = "3",
+    fillOpacity = 0.7,
+    highlightOptions = highlightOptions(
+      weight = 3,
+      color = "#666",
+      dashArray = "",
+      fillOpacity = 0.7,
+      bringToFront = TRUE
+    ),
+    label = ~paste0(name, ": ", ifelse(Language == "None", "No highlighted language", Language)),
+    labelOptions = labelOptions(
+      style = list("font-weight" = "normal", padding = "3px 8px"),
+      textsize = "15px",
+      direction = "auto"
+    )
+  ) %>%
+  # Add legend
+  addLegend(
+    pal = pal,
+    values = ~Language,
+    opacity = 0.7,
+    title = "Languages",
+    position = "bottomright",
+    labFormat = labelFormat(
+      suffix = ""
+    )
+  )
+```

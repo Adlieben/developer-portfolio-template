@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Adam Maghout",
+    "section": "",
+    "text": "Adam Maghout\n\n\nGitHub | LinkedIn | Mail"
+  },
+  {
+    "objectID": "skills.html",
+    "href": "skills.html",
+    "title": "Skills",
+    "section": "",
+    "text": "[[1]]\n[1] \"leaflet\"   \"stats\"     \"graphics\"  \"grDevices\" \"datasets\"  \"utils\"    \n[7] \"methods\"   \"base\"     \n\n[[2]]\n[1] \"dplyr\"     \"leaflet\"   \"stats\"     \"graphics\"  \"grDevices\" \"datasets\" \n[7] \"utils\"     \"methods\"   \"base\"     \n\n[[3]]\n [1] \"rnaturalearth\" \"dplyr\"         \"leaflet\"       \"stats\"        \n [5] \"graphics\"      \"grDevices\"     \"datasets\"      \"utils\"        \n [9] \"methods\"       \"base\"         \n\n[[4]]\n [1] \"rnaturalearthdata\" \"rnaturalearth\"     \"dplyr\"            \n [4] \"leaflet\"           \"stats\"             \"graphics\"         \n [7] \"grDevices\"         \"datasets\"          \"utils\"            \n[10] \"methods\"           \"base\"             \n\n[[5]]\n [1] \"stringr\"           \"rnaturalearthdata\" \"rnaturalearth\"    \n [4] \"dplyr\"             \"leaflet\"           \"stats\"            \n [7] \"graphics\"          \"grDevices\"         \"datasets\"         \n[10] \"utils\"             \"methods\"           \"base\"             \n\n[[6]]\n [1] \"terra\"             \"stringr\"           \"rnaturalearthdata\"\n [4] \"rnaturalearth\"     \"dplyr\"             \"leaflet\"          \n [7] \"stats\"             \"graphics\"          \"grDevices\"        \n[10] \"datasets\"          \"utils\"             \"methods\"          \n[13] \"base\""
+  },
+  {
+    "objectID": "CV.html",
+    "href": "CV.html",
+    "title": "CV",
+    "section": "",
+    "text": "You can view my CV here (opens up in a separate tab)."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Master’s Thesis: Evaluating the Impact of Passing Conditions and Retakes on Misclassification in the IB’s Diploma Programme\nLocation: The Hague\nYear: Ongoing\nSupervisor: Anton Béguin\nLanguages: R, Fortran, Quarto\nConducting a master’s thesis focused on evaluating the impact of passing conditions and retakes on misclassification in the IB’s Diploma Programme.\n\n\nInvestigating Respondents’ Opinions on Gender Questions in Large-scale Surveys\nLocation: Utrecht\nYear: Ongoing\nSupervisor: Katharina Meitinger, Angelo Moretti\nLanguages: Excel\nCoded responses in English, Dutch, German, and French for a survey investigating preferences concerning gender measures in survey data.\n\n\nLiterature Review on Composite Indicators in Small Area Estimation\nLocation: Utrecht\nYear: 2024\nSupervisor: Angelo Moretti\nLanguages: /\n\nConducted a literature review of papers on composite indicators in small area estimation.\nSearched online databases to build a formatted bibliography for the lead researcher.\n\n\n\nTeaching Assistant for ‘Multivariate Analysis’ Summer School\nLocation: Utrecht\nYear: 2024\nSupervisor: Dave Hessen\nLanguages: SPSS\nPrepared resources for discussion sessions and led tutorial sessions, explaining basic multivariate analysis techniques to social science students. Provided SPSS support during tutorials.\n\n\nBuilding an Application for Determining Optimal Allocation Ratios in Clinical Trials\nLocation: Utrecht\nYear: 2024\nSupervisor: Mirjam Moerbeek\nLanguages: R, R Shiny\nDeveloped an R Shiny application to find optimal allocation ratios in clinical trials using the Bayes Factor (BF). Conducted a simulation study to investigate the effect of different values of the BF and treatment effect on length of study in group sequential clinical trials. Prepared multilevel model exercises for a summer course taught by the supervisor.\n\n\nAcademic Replication\nLocation: Utrecht Year: 2024\nSupervisor: Independent project\nLanguages: R\nGithub: Repository Link\nReplicated the findings of Homes et al. (2021) and created an academic poster to present the results and methodology.\n\n\nImproving the LISS Panel Imputation Procedure\nLocation: Utrecht\nYear: 2023\nLanguages: R, R Shiny\nR Shiny: R Shiny Link\nCreated an R Shiny app to demonstrate the limitations of the LISS panel imputation procedure and improved upon it using multiple and stepwise imputation methods in R."
+  },
+  {
+    "objectID": "about-me.html",
+    "href": "about-me.html",
+    "title": "About me",
+    "section": "",
+    "text": "I’m a graduate student and research assistant at Utrecht University in the Netherlands. My main areas of interest are educational measurement, survey design, and promoting reproducibility in research. I really enjoy teaching, and have been teaching French online for over three years, as well as teaching on summer courses. I’m also into music, you can learn about everything I play on my sister website."
+  },
+  {
+    "objectID": "skills.html#languages",
+    "href": "skills.html#languages",
+    "title": "Skills",
+    "section": "",
+    "text": "[[1]]\n[1] \"leaflet\"   \"stats\"     \"graphics\"  \"grDevices\" \"datasets\"  \"utils\"    \n[7] \"methods\"   \"base\"     \n\n[[2]]\n[1] \"dplyr\"     \"leaflet\"   \"stats\"     \"graphics\"  \"grDevices\" \"datasets\" \n[7] \"utils\"     \"methods\"   \"base\"     \n\n[[3]]\n [1] \"rnaturalearth\" \"dplyr\"         \"leaflet\"       \"stats\"        \n [5] \"graphics\"      \"grDevices\"     \"datasets\"      \"utils\"        \n [9] \"methods\"       \"base\"         \n\n[[4]]\n [1] \"rnaturalearthdata\" \"rnaturalearth\"     \"dplyr\"            \n [4] \"leaflet\"           \"stats\"             \"graphics\"         \n [7] \"grDevices\"         \"datasets\"          \"utils\"            \n[10] \"methods\"           \"base\"             \n\n[[5]]\n [1] \"stringr\"           \"rnaturalearthdata\" \"rnaturalearth\"    \n [4] \"dplyr\"             \"leaflet\"           \"stats\"            \n [7] \"graphics\"          \"grDevices\"         \"datasets\"         \n[10] \"utils\"             \"methods\"           \"base\"             \n\n[[6]]\n [1] \"terra\"             \"stringr\"           \"rnaturalearthdata\"\n [4] \"rnaturalearth\"     \"dplyr\"             \"leaflet\"          \n [7] \"stats\"             \"graphics\"          \"grDevices\"        \n[10] \"datasets\"          \"utils\"             \"methods\"          \n[13] \"base\""
+  }
+]

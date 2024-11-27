@@ -1,0 +1,93 @@
+---
+title: "Projects"
+format:
+  html:
+    toc: false
+    number-sections: false
+---
+
+<div class="projects-container">
+
+### Master's Thesis: *Evaluating the Impact of Passing Conditions and Retakes on Misclassification in the IB’s Diploma Programme*
+**Location:** The Hague  
+**Year:** Ongoing  
+**Supervisor:** Anton Béguin  
+**Languages:** R, Fortran, Quarto
+
+Conducting a master's thesis focused on evaluating the impact of passing conditions and retakes on misclassification in the IB’s Diploma Programme.
+
+</div>
+
+<div class="projects-container">
+
+### Investigating Respondents' Opinions on Gender Questions in Large-scale Surveys
+**Location:** Utrecht  
+**Year:** Ongoing  
+**Supervisor:** Katharina Meitinger, Angelo Moretti  
+**Languages:** Excel  
+
+Coded responses in English, Dutch, German, and French for a survey investigating preferences concerning gender measures in survey data.
+
+</div>
+
+<div class="projects-container">
+
+### Literature Review on Composite Indicators in Small Area Estimation
+**Location:** Utrecht  
+**Year:** 2024  
+**Supervisor:** Angelo Moretti   
+**Languages:** /  
+
+- Conducted a literature review of papers on composite indicators in small area estimation.
+- Searched online databases to build a formatted bibliography for the lead researcher.
+
+</div>
+
+<div class="projects-container">
+
+### Teaching Assistant for *‘Multivariate Analysis’* Summer School 
+**Location:** Utrecht  
+**Year:** 2024  
+**Supervisor:** Dave Hessen  
+**Languages:** SPSS
+
+Prepared resources for discussion sessions and led tutorial sessions, explaining basic multivariate analysis techniques to social science students. Provided SPSS support during tutorials.
+
+</div>
+
+<div class="projects-container">
+
+### Building an Application for Determining Optimal Allocation Ratios in Clinical Trials
+**Location:** Utrecht  
+**Year:** 2024  
+**Supervisor:** Mirjam Moerbeek  
+**Languages:** R, R Shiny
+
+Developed an R Shiny application to find optimal allocation ratios in clinical trials using the Bayes Factor (BF). Conducted a simulation study to investigate the effect of different values of the BF and treatment effect on length of study in group sequential clinical trials. Prepared multilevel model exercises for a summer course taught by the supervisor.
+
+</div>
+
+<div class="projects-container">
+
+### Academic Replication
+**Location:** Utrecht
+**Year:** 2024  
+**Supervisor:** Independent project  
+**Languages:** R  
+**Github:** [Repository Link](https://github.com/Adlieben/Homes-et-al.-2021-Replication) 
+
+Replicated the findings of Homes et al. (2021) and created an academic poster to present the results and methodology.
+
+</div>
+
+<div class="projects-container">
+
+### Improving the LISS Panel Imputation Procedure
+**Location:** Utrecht  
+**Year:** 2023  
+**Languages:** R, R Shiny  
+**R Shiny:** [R Shiny Link](https://wardeiling.shinyapps.io/imputation-simulator/)  
+
+Created an R Shiny app to demonstrate the limitations of the LISS panel imputation procedure and improved upon it using multiple and stepwise imputation methods in R.
+
+</div>

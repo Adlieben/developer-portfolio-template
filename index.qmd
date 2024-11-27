@@ -1,0 +1,21 @@
+---
+format:
+  html:
+    toc: false
+    number-sections: false
+---
+
+<p align="center">
+  <!-- Profile Image -->
+  <img src="images/profile.jpg" alt="Profile Picture" style="border-radius: 50%; width: 250px; height: 250px;">
+</p>
+
+<p align="center" style="font-size: 2rem; font-weight: bold; margin: 10px 0;">
+Adam Maghout
+</p>
+
+<p align="center" style="font-size: 1.5rem; margin-top: 20px;">
+  [GitHub](https://github.com/Adlieben){target="_blank"} | 
+  [LinkedIn](https://www.linkedin.com/in/adam-maghout-130565213/){target="_blank"} | 
+  [Mail](mailto:a.maghout@uu.nl)
+</p>

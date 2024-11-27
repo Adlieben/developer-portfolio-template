@@ -1,0 +1,47 @@
+on:
+  workflow_dispatch:
+  push:
+    branches: main
+
+name: Quarto Publish
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libproj-dev libgeos-dev libgdal-dev libudunits2-dev
+
+      - name: Cache R Packages
+        uses: actions/cache@v3
+        with:
+          path: ~/R/x86_64-pc-linux-gnu-library/4.2
+          key: ${{ runner.os }}-R-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-R-
+
+      - name: Install R Packages
+        run: |
+          Rscript -e 'install.packages("renv", repos = "https://cloud.r-project.org")'
+          Rscript -e 'install.packages("rmarkdown", repos = "https://cloud.r-project.org")'
+          Rscript -e 'renv::restore()'
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Preserve CNAME
+        run: echo "www.adammaghout-academic.com" > CNAME
+
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
